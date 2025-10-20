@@ -8,6 +8,7 @@ import TarefasConcluidas from './pages/TarefasConcluidas';
 import './index.css';
 
 function App() {
+
   const [tarefas, setTarefas] = useState([]);
 
   const adicionarTarefa = (texto) => {

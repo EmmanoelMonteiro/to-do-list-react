@@ -1,6 +1,7 @@
 import ItemDaTarefa from './ItemDaTarefa';
 
 function ListaDeTarefas({ tarefas, onToggle, onRemove }) {
+  console.log(tarefas);
   return (
     <ul className="task-list">
       {tarefas.map(tarefa => (
