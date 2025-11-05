@@ -12,14 +12,15 @@ function FormularioDeTarefa({ onAdd }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="task-form">
+    <form onSubmit={handleSubmit} className="mb-4 d-flex">
       <input
         type="text"
         placeholder="Adicionar nova tarefa..."
         value={tarefa}
         onChange={(e) => setTarefa(e.target.value)}
+        className="form-control me-2"
       />
-      <button type="submit">Adicionar</button>
+      <button type="submit" className="btn btn-primary">Adicionar</button>
     </form>
   );
 }
